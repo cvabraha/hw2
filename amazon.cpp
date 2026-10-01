@@ -106,14 +106,14 @@ int main(int argc, char* argv[])
         if(ss >> username) {
           ds.viewCart(username);
         }else{
-          cout << "Invalid Username" << endl;
+          cout << "Invalid username" << endl;
         }
       } else if (cmd == "BUYCART"){
         string username;
         if(ss >> username) {
           ds.buyCart(username);
         }else{
-          cout << "Invalid Username" << endl;
+          cout << "Invalid username" << endl;
         }
       }
 
@@ -124,10 +124,10 @@ int main(int argc, char* argv[])
           if (index >= 0 && index <= (int)hits.size()) {
             ds.addToCart(username, hits[index - 1]);
           }else{
-            cout << "Invalid Request" << endl;
+            cout << "Invalid request" << endl;
           }
         }else{
-          cout << "Invalid Username" << endl;
+          cout << "Invalid request" << endl;
         }
       }
 
